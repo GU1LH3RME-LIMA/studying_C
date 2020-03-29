@@ -1,0 +1,16 @@
+<?php
+include ("pf.php");
+$id=$_POST["tId"];
+$nome=$_POST["tNome"];
+$sal=$_POST["Sal"];
+$escol=$_POST["tEscol"];
+$ende=$_POST["tEndereco"];
+$btn=$_POST["btn1"];
+
+if ($btn=="PF"){
+  $PF  =new PF(); // aqui instancio a classe
+  $PF->setNome($nome);
+  $PF->setEndereco($ende);
+  $PF->setTel($tel);
+  $PF->setEscolaridade($escol);
+  $pf->setSal(
